@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== ADD THESE NEW META TAGS ===== -->
+    <meta name="description" content="Aqdas - AI Specialist & Frontend Developer portfolio showcasing machine learning projects, web development skills, and photography work">
+    <meta property="og:title" content="Aqdas | AI Specialist & Frontend Developer">
+    <meta property="og:description" content="Portfolio showcasing AI projects and frontend development work">
+    <meta property="og:image" content="https://yourdomain.com/images/profile.jpg">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>Aqdas | AI Specialist & Developer</title>
+    
+    <!-- ===== PRELOAD KEY RESOURCES ===== -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" as="style">
+    <link rel="preload" href="styles.css" as="style">
+    
+    <!-- ===== EXISTING LINKS ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- ===== FAVICON (ADD THIS) ===== -->
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">AY</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#photography">Photography</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="full-height">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hii, I'm <span>Aqdas</span></h1>
+                <h2>AI Specialist & Frontend Developer</h2>
+                <p class="tagline">Developer by day, chess player by night - always strategizing</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Let's Connect</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- PASTE YOUR PROFILE PHOTO LINK HERE -->
+                <img src="images/profile.jpg" alt="Aqdas" class="profile-img">
+            </div>
+            <div class="scroll-down">
+                <p>Explore More</p>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                  <div class="about-text-container">  <!-- Added container for left column -->
+                      <div class="about-text">
+
+                        <p>Computer Science student specializing in AI with hands-on experience in frontend development. Passionate about creating intelligent systems and beautiful interfaces. Currently expanding my expertise in machine learning and neural networks, working on projects that bridge AI theory with practical applications.</p>
+                        <p>When not coding, you'll find me playing chess (current rating: 1054), capturing moments through my lens, or exploring new algorithms. I also enjoy competitive badminton and contributing to open-source AI projects.</p>
+                    </div>
+                    <div class="chess-section">  <!-- New container for chess button -->
+                        <a href="https://link.chess.com/play/a4KORO" class="btn chess-challenge" target="_blank">
+                            <i class="fas fa-chess-knight"></i> Challenge Me in Chess
+                        </a>
+                    </div>
+            </div>
+
+                    <div class="education-timeline">
+                        <div class="education-item">
+                            <div class="education-header">
+                                <h3>Bennett University</h3>
+                                <span class="education-date">2023 - Present</span>
+                            </div>
+                            <p class="education-degree">Bachelor of Technology - Computer Science and Engineering</p>
+                            <p class="education-location">Noida, Uttar Pradesh</p>
+                            <p class="education-gpa"><strong>CGPA:</strong> 7.37</p>
+                        </div>
+                        
+                        <div class="education-item">
+                            <div class="education-header">
+                                <h3>Manasthali Education Centre</h3>
+                                <span class="education-date">2017 - 2021</span>
+                            </div>
+                            <p class="education-degree">Intermediate (Class XII)</p>
+                            <p class="education-location">Balia, Uttar Pradesh</p>
+                            <p class="education-gpa"><strong>Percentage:</strong> 89.6%</p>
+                            
+                            <p class="education-degree">Matriculation (Class X)</p>
+                            <p class="education-location">Balia, Uttar Pradesh</p>
+                            <p class="education-gpa"><strong>Percentage:</strong> 82.4%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- Skills Section -->
+<section id="skills" class="section bg-light">
+    <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Development</h3>
+                <div class="circular-skills">
+                    <div class="skill-item">
+                        <div class="skill-circle">
+                            <svg>
+                                <circle class="bg" cx="75" cy="75" r="70"></circle>
+                                <circle class="progress" cx="75" cy="75" r="70" style="--percent: 87"></circle>
+                            </svg>
+                            <div class="skill-percent">87%</div>
+                        </div>
+                        <div class="skill-name">C++/DSA/DAA</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-circle">
+                            <svg>
+                                <circle class="bg" cx="75" cy="75" r="70"></circle>
+                                <circle class="progress" cx="75" cy="75" r="70" style="--percent: 90"></circle>
+                            </svg>
+                            <div class="skill-percent">90%</div>
+                        </div>
+                        <div class="skill-name">Frontend Dev</div>
+                    </div>
+                    <!-- New Machine Learning Skill -->
+                    <div class="skill-item">
+                        <div class="skill-circle">
+                            <svg>
+                                <circle class="bg" cx="75" cy="75" r="70"></circle>
+                                <circle class="progress" cx="75" cy="75" r="70" style="--percent: 70"></circle>
+                            </svg>
+                            <div class="skill-percent">70%</div>
+                        </div>
+                        <div class="skill-name">Machine Learning</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Creative</h3>
+                <div class="circular-skills">
+                    <div class="skill-item">
+                        <div class="skill-circle">
+                            <svg>
+                                <circle class="bg" cx="75" cy="75" r="70"></circle>
+                                <circle class="progress" cx="75" cy="75" r="70" style="--percent: 80"></circle>
+                            </svg>
+                            <div class="skill-percent">80%</div>
+                        </div>
+                        <div class="skill-name">Photography</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-circle">
+                            <svg>
+                                <circle class="bg" cx="75" cy="75" r="70"></circle>
+                                <circle class="progress" cx="75" cy="75" r="70" style="--percent: 85"></circle>
+                            </svg>
+                            <div class="skill-percent">85%</div>
+                        </div>
+                        <div class="skill-name">Chess</div>
+                    </div>
+                    <!-- New Badminton Skill -->
+                    <div class="skill-item">
+                        <div class="skill-circle">
+                            <svg>
+                                <circle class="bg" cx="75" cy="75" r="70"></circle>
+                                <circle class="progress" cx="75" cy="75" r="70" style="--percent: 92"></circle>
+                            </svg>
+                            <div class="skill-percent">92%</div>
+                        </div>
+                        <div class="skill-name">Badminton</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-carousel">
+                <div class="projects-track" id="projectsTrack">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <!-- PASTE WARDIN PROJECT SCREENSHOT LINK HERE -->
+                            <img src="images/Wardinn.png" alt="Wardin Hostel Booking">
+                        </div>
+                        <div class="project-info">
+                            <h3>Wardin Hostel Booking</h3>
+                            <p>University hostel management system with real-time availability tracking.</p>
+                            <div class="tech-stack">
+                                <span>Html/Css</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <a href="https://github.com/Aqdasjustinn/DTI/tree/main/codee" class="project-link" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <!-- PASTE SIGN LANGUAGE PROJECT SCREENSHOT LINK HERE -->
+                            <img src="images/sign-language-translator.png" alt="Sign Language Translator">
+                        </div>
+                        <div class="project-info">
+                            <h3>Sign Language Translator</h3>
+                            <p>AI-powered system converting sign language to text.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>OpenCV</span>
+                            </div>
+                            <a href="https://github.com/Aqdasjustinn/Sign-language-" class="project-link" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-nav" id="carouselNav"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">My Certifications</h2>
+            <div class="certifications-grid">
+      <!-- Certificate 1 -->
+      <div class="certificate-card">
+        <div class="certificate-img">
+          <img src="images/algorithmic-toolbox.jpg" alt="Algorithmic Toolbox">
+        </div>
+        <div class="certificate-info">
+          <h3>Algorithmic Toolbox</h3>
+          <p>Coursera</p>
+          <p>Issued: Apr 2025</p>
+          <a href="https://coursera.org/verify/WP5FRXYPLMOW" target="_blank" class="btn btn-certificate">
+            <i class="fas fa-external-link-alt"></i> Verify
+          </a>
+        </div>
+      </div>
+
+      <!-- Certificate 2 -->
+      <div class="certificate-card">
+        <div class="certificate-img">
+          <img src="images/Ai.jpg" alt="Improving Deep Neural Networks">
+        </div>
+        <div class="certificate-info">
+          <h3>Improving Deep Neural Networks</h3>
+          <p>Coursera</p>
+          <p>Issued: Apr 2025</p>
+          <a href="https://coursera.org/verify/Z1VULMKC86S5" target="_blank" class="btn btn-certificate">
+            <i class="fas fa-external-link-alt"></i> Verify
+          </a>
+        </div>
+      </div>
+
+      <!-- Certificate 3 -->
+            <div class="certificate-card">
+                <div class="certificate-img">
+                <img src="images/ims.jpg" alt="Introduction to Modern Database Systems">
+                </div>
+                <div class="certificate-info">
+                <h3>Introduction to Modern Database Systems</h3>
+                <p>Saylor Academy</p>
+                <p>Issued: Nov 2024</p>
+                <a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=0421468829AY" target="_blank" class="btn btn-certificate">
+                    <i class="fas fa-external-link-alt"></i> Verify
+                </a>
+                </div>
+            </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- Photography Section -->
+    <section id="photography" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">My Photography</h2>
+            <div class="photo-gallery">
+                <!-- PASTE YOUR PHOTOGRAPHY IMAGE LINKS HERE (4 images) -->
+                <div class="photo-item">
+                    <img src="images/photography-1.jpg" alt="Photography Work 1">
+                </div>
+                <div class="photo-item">
+                    <img src="images/photography-2.jpg" alt="Photography Work 2">
+                </div>
+                <div class="photo-item">
+                    <img src="images/photography-3.jpg" alt="Photography Work 3">
+                </div>
+                <div class="photo-item">
+                    <img src="images/photography-4.jpg" alt="Photography Work 4">
+                </div>
+            </div>
+            <div class="instagram-link">
+                <a href="https://www.instagram.com/the__lensman__/" target="_blank">
+                    <i class="fab fa-instagram"></i> See more on Instagram @the__lensman__
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>yunusaqdas@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span id="phoneNumber"></span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Aqdasjustinn" target="_blank" class="social-link github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://leetcode.com/u/aqdas_justin/" target="_blank" class="social-link leetcode">
+                            <i class="fas fa-code"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aqdas-695129282/" target="_blank" class="social-link linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/aqdas_justin/" target="_blank" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm" action="https://submit-form.com/zMKfS6RwA"> method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                    <div id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 | Crafted with ♥ by Aqdas</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+        <script>
+    document.getElementById('phoneNumber').textContent = 
+        ['+91', '9565', '800629'].join(' ');
+    </script>
+    
+</body>
+</html>
