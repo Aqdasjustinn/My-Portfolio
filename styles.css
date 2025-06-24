@@ -608,9 +608,9 @@ nav .container {
 
 
 /* Certifications Section */
-/* ===== Updated Certifications CSS ===== */
+/* Certifications Section */
 #certifications {
-  background-color: #DAD7CD; /* Changed to your cream color */
+  background-color: var(--bg); /* Changed to use your bg variable */
 }
 
 .certifications-grid {
@@ -621,14 +621,15 @@ nav .container {
 }
 
 .certificate-card {
-  background: white;
+  background: var(--card-bg); /* Using your card-bg variable */
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
-  display: flex; /* New */
-  flex-direction: column; /* New */
-  height: 100%; /* New */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.05); /* Added subtle border */
 }
 
 .certificate-card:hover {
@@ -638,22 +639,23 @@ nav .container {
 .certificate-img {
   height: 200px;
   overflow: hidden;
-  border-bottom: 1px solid #eee; /* Optional divider */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Using rgba for better dark mode */
+  background: var(--card-bg); /* Added for dark mode */
 }
 
 .certificate-img img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Changed from 'cover' to 'contain' */
-  padding: 10px; /* Prevents image touching edges */
-  background: white; /* For PNGs with transparency */
+  object-fit: contain;
+  padding: 10px;
+  background: var(--card-bg); /* Using variable instead of white */
 }
 
 .certificate-info {
   padding: 1.5rem;
-  flex-grow: 1; /* Pushes button to bottom */
-  display: flex; /* New */
-  flex-direction: column; /* New */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .certificate-info h3 {
@@ -672,57 +674,57 @@ nav .container {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  margin-top: auto; /* Key change - pushes to bottom */
+  margin-top: auto;
   padding: 0.6rem 1.2rem;
   background: var(--accent);
   color: white;
   border-radius: 50px;
-  align-self: flex-start; /* Aligns buttons consistently */
+  align-self: flex-start;
 }
 
 .btn-certificate:hover {
   background: var(--secondary);
 }
 
-/* Optional: Add this if you want equal card heights */
 .certifications-grid {
-  align-items: stretch; /* Makes all cards same height */
+  align-items: stretch;
 }
 
-/* ===== Dark Mode Fixes for Certifications ===== */
-.dark-mode .certificate-card {
-  background: var(--card-bg); /* Keeps your existing dark mode color */
-  border: 1px solid #333; /* Subtle border for definition */
+/* Add these media queries below your existing CSS */
+@media (max-width: 768px) {
+  #certifications {
+    padding: 3rem 0; /* Reduce padding on mobile */
+  }
+  
+  .certifications-grid {
+    grid-template-columns: 1fr; /* Stack cards on small screens */
+    gap: 1.5rem;
+    padding: 0 15px; /* Add side padding */
+  }
+  
+  .certificate-card {
+    max-width: 100%; /* Ensure cards don't overflow */
+  }
+  
+  .certificate-img {
+    height: 180px; /* Slightly reduce image height */
+  }
+  
+  .certificate-info {
+    padding: 1.2rem; /* Adjust padding */
+  }
 }
 
-.dark-mode .certificate-info h3 {
-  color: var(--light); /* Lighter green for titles */
+@media (max-width: 480px) {
+  .certificate-img {
+    height: 160px; /* Further reduce on very small screens */
+  }
+  
+  .btn-certificate {
+    padding: 0.5rem 1rem; /* Slightly smaller button */
+    font-size: 0.9rem;
+  }
 }
-
-.dark-mode .certificate-info p {
-  color: #c9c9c9; /* Soft gray for readability */
-}
-
-.dark-mode .certificate-img {
-  background: #1e1e1e; /* Dark bg for certificate images */
-  border-bottom: 1px solid #444; /* Darker divider */
-}
-
-.dark-mode .btn-certificate {
-  background: var(--accent);
-  color: #fff;
-}
-
-.dark-mode .btn-certificate:hover {
-  background: var(--secondary);
-}
-
-/* For certificate images with white backgrounds */
-.dark-mode .certificate-img img {
-  background: var(--card-bg); /* Dark background for images */
-  padding: 15px; /* More padding in dark mode */
-}
-
 
 
 /* Photography Section */
