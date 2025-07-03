@@ -283,6 +283,88 @@ nav .container {
   }
 }
 
+/* Add these media queries at the end of your hero section CSS */
+
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+  
+  .hero-content {
+    padding-right: 0;
+    order: 2; /* Content comes after image on mobile */
+  }
+  
+  .hero-image {
+    order: 1; /* Image comes first on mobile */
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .profile-img {
+    max-width: 280px;
+    border-width: 8px;
+  }
+  
+  .btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+  
+  .tagline {
+    font-size: 1rem;
+  }
+  
+  .profile-img {
+    max-width: 220px;
+    border-width: 6px;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .scroll-down {
+    bottom: 1rem;
+  }
+}
+
+/* For very small phones (iPhone SE etc) */
+@media (max-width: 375px) {
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+  
+  .profile-img {
+    max-width: 200px;
+  }
+}
+
 /* About Section */
 /* ===== Updated About Section CSS ===== */
 #about {
